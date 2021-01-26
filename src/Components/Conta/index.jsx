@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Icon, Box, Detalhe, Saldo, Button} from "../UI/index.js";
+import {Icon, ThemeIcon, Box, Detalhe, Saldo, Button} from "../UI/index.js";
 import styled from "styled-components"
 
 import privado from "../../assets/images/privado.svg";
@@ -23,7 +23,7 @@ const Conta = () => {
       <div style={{ fontSize: "26px", padding: "20px 0" }}>
         Saldo disponível{" "}
         <span>
-          <Icon src={dinheiro} alt="Ícone Saldo" />
+          <ThemeIcon src={dinheiro} alt="Ícone Saldo" />
         </span>
         {toggleState ? (
           <Saldo>
